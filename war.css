@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    transition: all 1s;
+}
+body{
+    color: #ffffff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    background-color: #0a080a;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px 50px;
+    gap: 20px;
+}
+header img{
+    width: 150px;
+    cursor: pointer;
+   
+}
+header nav{
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    transition: color 1s, text-shadow 1s;
+}
+header nav a:hover{
+    color: crimson;
+    text-shadow: 2px 2px 10px crimson;
+    transition: all 1s;
+}
+#welcome-sec{
+    background-image: url(main.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.welcome-text{
+    width: 100vw;
+}
+.welcome-text h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px black;
+    letter-spacing: 15px;
+    
+}
+.welcome-text p{
+    max-width: 700px;
+    margin: 90px auto;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+    font-size: 25px;
+}
+#sec-1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 200px;
+    padding: 0 50px;
+}
+.left-side{max-width: 600px;}
+.left-side h1{
+    font-size: 75px;
+    line-height: 80px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid white;
+}
+.left-side p{
+    padding-top: 30px;
+    font-size: 18px;
+    
+}
+.left-side p span{
+    border-bottom: 3px solid crimson;
+}
+.right-side{
+    max-width: 600px;
+    max-height: 600px;
+}
+.right-side img{
+    width: 100%;
+    height: 100%;
+}
+#sec-2{
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.9) 50%),
+    url(sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+
+}
+.heading{
+    text-align: center;
+    margin-top: 100px;
+
+}
+.heading h5{
+    font-size: 24px;
+    
+}
+.heading h1{
+    font-size: 60px;
+    font-weight: 500;
+
+
+}
+.boxes{
+    width: 620px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 5pxpx;
+
+}
+.box{
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.box:last-child{
+    width: 605px;
+}
+.box h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: crimson;
+    letter-spacing: 3px;
+}
+.box p{
+    font-size: 18px;
+}
+#sec-3{
+    background-image:url(sec-3.png);
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    gap:50px;
+    
+}
+#sec-3 .left{
+    max-width: 430px;
+    
+}
+#sec-3 .left h3{
+    font-size: 24px;
+}
+#sec-3 .left .opin{
+    font-size: 80px;
+}
+#sec-3 .left p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+#sec-3 .left button{
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 50px;
+    cursor: pointer;
+    border: none;
+    transition: backgroun-color 0.5s, color 0.5s;
+}
+#sec-3 .left button:hover{
+    background-color: rgba(95, 72, 72, 0.219);
+    color:red;
+    text-shadow: 2px 2px 20px crimson;
+    transition: all 1s;
+}
+/* sonradan dönüp bak!!!! */
+#sec-3 .right{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+   
+}
+.card{
+    width: 450px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card:hover{
+    transform: translate(-5px, -5px);
+    transition: all 1s;
+}
+.card:nth-child(2){
+    align-self: flex-start;
+}
+.person-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info-detail h1{
+    color: crimson;
+}
+small{
+    color: gray;
+}
+
+
+
+
+@media(max-width:1300px){
+    #sec-1{
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;   
+    }  
+    #sec-3{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec-3 .left{
+        padding-top: 30px;
+    }
+    #sec-3 .right{
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .card:nth-child(2){
+        align-self: center;
+    }
+  
+}
+@media(max-width:1100px){
+    .right-side{
+        max-width: 500px;
+        max-height: 800px;
+    }
+
+}
